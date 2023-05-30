@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
+*{
+    scroll-behavior: smooth;;
+    scroll-margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgba(214, 205, 205, 0.788);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.datos>a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+h1{
+    font-family: 'Crafty Girls', cursive;
+
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.datos{
+    display: center;
+    margin-top: 30px;    
+}
+
+.perfil{
+    width: 200px;
+    border: 5px solid rgb(166, 166, 219);
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-right: 100px;
+    
+}
+
+.parrafo{
+    text-align: justify;
+    width: 650px;
+    margin-left: 150px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+section{
+    position: relative;
+    margin: 100px;
+    height: 600px;
+    text-align: center;
+}
