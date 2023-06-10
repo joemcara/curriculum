@@ -8,6 +8,7 @@
     scroll-margin-top: 100px;
     font-family: 'Times New Roman', Times, serif;
     color: rgba(255, 255, 255, 0.658);
+    font-size: 1.3rem;
 }
 body{
     background-color: rgb(2, 121, 65);
@@ -34,6 +35,11 @@ header{
     background-color: rgb(2, 121, 65);
 }
 
+section ul{
+    list-style: none;
+    gap: 150px;
+}
+
 nav{
     width: 50%;
 }
@@ -49,8 +55,10 @@ nav{
 }
 
 .texto{
+    display: flex;
+    align-items: center;
     height: 100%;
-    width: auto;
+    width: 100%;
     text-align: justify;
 }
 
@@ -65,16 +73,24 @@ div{
     display: flex;
     justify-content: center;
 }
-
 section{
     padding: 0 5%;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 36px;
     min-height: 50vh;
     align-items: center;
-
+    margin-bottom: 2rem;
 }
+
+.section1{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(49%,1fr));
+    place-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+
 .redesContacto{
     gap: 1 rem;
     grid-template-columns: repeat(1,1fr);
@@ -95,15 +111,34 @@ footer{
 button{
     color: black;
 }
+
+#experiencia{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#estudios{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
 @media screen and (max-width: 576px) {
     section {
         gap: 2rem;
+        padding: 0%;
     }
     h1{
         width: 100%;
         text-align: center;
     }
-
+    
+    .texto{
+        width: 100%;
+    }
+    .perfilimg > img{
+        width: 50%;
+    }
 
     .contact-form>input, 
     .contact-form>textarea,
