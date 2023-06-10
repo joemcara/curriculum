@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Montserrat:wght@100;200;300&family=Roboto:wght@100;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255, 255, 255, 0.658);
+}
+body{
+    background-color: rgb(2, 121, 65);
+}
+
+header >h1 >h3{
+    font-family: 'Montserrat';
+    color: rgb(255, 255, 255);
+    justify-content: right;
+}
+
+
+header{
+    height: 125px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 5%;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    letter-spacing: .2rem;
+    z-index: 1000;
+    background-color: rgb(2, 121, 65);
+}
+
+nav{
+    width: 50%;
+}
+
+
+.navmenu{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    
+}
+
+.texto{
+    height: 100%;
+    width: auto;
+    text-align: justify;
+}
+
+
+.perfilimg > img{
+    width: 50%;
+    object-fit: cover;
+    border-radius: 14%;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    padding: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 36px;
+    min-height: 50vh;
+    align-items: center;
+    
+}
+.redesContacto{
+    gap: 1 rem;
+    grid-template-columns: repeat(1,1fr);
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+button{
+    color: black;
+}
+@media screen and (max-width: 576px) {
+    section {
+        gap: 2rem;
+    }
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .contact-form>input, 
+    .contact-form>textarea,
+    .contact-form>label{
+        width: 100%;
+    }
+}
