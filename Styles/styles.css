@@ -49,8 +49,8 @@ nav{
 }
 
 .texto{
-    height: 100%;
-    width: auto;
+    display: grid;
+    
     text-align: justify;
 }
 
@@ -65,7 +65,10 @@ div{
     display: flex;
     justify-content: center;
 }
+.section1{
+    display: flex;
 
+}
 section{
     padding: 0 5%;
     display: flex;
@@ -73,6 +76,7 @@ section{
     column-gap: 36px;
     min-height: 50vh;
     align-items: center;
+    height: 500px;
     
 }
 .redesContacto{
@@ -95,6 +99,20 @@ footer{
 button{
     color: black;
 }
+li{
+    list-style: none;
+}
+
+
+section > ul.redesContacto >i {
+    display: flex;
+    justify-content: space-between;
+    
+    line-height: 2rem;
+    border-radius: 5px;
+
+}
+
 @media screen and (max-width: 576px) {
     section {
         gap: 2rem;
@@ -103,7 +121,7 @@ button{
         width: 100%;
         text-align: center;
     }
-
+    
 
     .contact-form>input, 
     .contact-form>textarea,
